@@ -1,0 +1,1 @@
+/Users/toru0707/git/meeetletnium/Resources/sub_windows/detail_adjusted_event.js

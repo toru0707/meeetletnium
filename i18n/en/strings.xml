@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="welcome_message">Welcome to Meeetlet/</string>
+	<string name="user_agent_message">user agent set to</string>
+	<string name="format_test">Your name is %s</string>
+	
+	<string name="adjusted_tab_title">調整済</string>
+	<string name="adjusting_tab_title">調整中</string> 
+	<string name="public_tab_title">公開中</string>
+	<string name="create_tab_title">作成</string>
+	<string name="others_tab_title">その他</string>
+	
+	<string name="adjusted_win_title">調整済イベント</string>
+	<string name="adjusting_win_title">調整中イベント</string> 
+	<string name="public_win_title">公開中イベント</string>
+	<string name="create_win_title">イベント作成</string>
+	<string name="others_win_title">その他</string>
+</resources>
