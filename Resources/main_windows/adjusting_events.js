@@ -1,6 +1,10 @@
 var currentRow, currentRowIndex, data, dateLabel, i, noteLabel, row, search, tab, tableView, titleLabel, win,
   _this = this;
 
+Ti.include(Ti.Filesystem.resourcesDirectory + "/helpers/constants.js");
+
+Ti.include(Ti.Filesystem.resourcesDirectory + "/helpers/api.js");
+
 win = Titanium.UI.currentWindow;
 
 tab = Ti.UI.currentTab;
@@ -20,6 +24,12 @@ search.addEventListener('return', function(e) {
 
 search.addEventListener('cancel', function(e) {
   return search.blur;
+});
+
+win.open(function() {});
+
+win.addEventListener('open', function(e) {
+  return Ti.API.log("win is opend!.");
 });
 
 data = [];

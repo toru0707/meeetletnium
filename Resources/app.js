@@ -1,4 +1,4 @@
-var Tab, TabGroup, Window, tab1, tab2, tab3, tab4, tabGroup,
+var Tab, TabGroup, Window, tab1, tab2, tab3, tab4, tab5, tabGroup,
   _this = this;
 
 TabGroup = (function() {
@@ -66,6 +66,10 @@ tabGroup.addTab(tab3.tab);
 tab4 = new Tab('create_tab_title', 'create_win_title', '', 'main_windows/create_event.js');
 
 tabGroup.addTab(tab4.tab);
+
+tab5 = new Tab('settings_tab_title', 'settings_win_title', '', 'main_windows/settings.js');
+
+tabGroup.addTab(tab5.tab);
 
 tabGroup.addEventListener('open', function(e) {
   return Titanium.UI.setBackgroundColor('#fff');

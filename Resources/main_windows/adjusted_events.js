@@ -1,9 +1,17 @@
-var currentRow, currentRowIndex, data, dateLabel, i, noteLabel, row, search, tab, tableView, titleLabel, win,
+var currentRow, currentRowIndex, data, dateLabel, events, i, noteLabel, row, search, tab, tableView, titleLabel, win,
   _this = this;
+
+Ti.include(Ti.Filesystem.resourcesDirectory + "/helpers/constants.js");
 
 win = Titanium.UI.currentWindow;
 
 tab = Ti.UI.currentTab;
+
+events = [];
+
+win.addEventListener('open', function(e) {
+  return Ti.API.log("win is opend");
+});
 
 search = Titanium.UI.createSearchBar({
   barColor: '#385292',

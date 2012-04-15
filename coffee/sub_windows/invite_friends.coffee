@@ -68,8 +68,6 @@ search.addEventListener 'return', (e) =>
 search.addEventListener 'cancel', (e) =>
 	search.blur 
 
-
-
 tableview = Ti.UI.createTableView {
     data:tableData,
     search:search,

@@ -1,5 +1,11 @@
+Ti.include(Ti.Filesystem.resourcesDirectory + "/helpers/constants.js")
+
 win = Titanium.UI.currentWindow
 tab = Ti.UI.currentTab
+
+events = []
+win.addEventListener 'open', (e) ->
+  Ti.API.log "win is opend"
 
 search = Titanium.UI.createSearchBar {
 	barColor:'#385292',

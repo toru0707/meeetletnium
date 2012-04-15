@@ -1,30 +1,30 @@
 win = Ti.UI.currentWindow
 tab = Ti.UI.currentTab
 
-navbarButton = Titanium.UI.createButtonBar {
-	labels:["設定"],
-	backgroundColor:'#336699'
-}
-
-win.setRightNavButton(navbarButton)
-
-navbarButton.addEventListener 'click', (e) =>
-  dialog.show()
-
-
-dialog = Titanium.UI.createOptionDialog {
-  options:['ログイン設定'],
-  destructive:1,
-  cancel:2,
-  title:'ユーザ設定'
-} 
-
-dialog.addEventListener 'click', (e) =>
-  win = Ti.UI.createWindow {
-    titleid : "設定",
-    url : '../main_windows/others.js'
-  }
-  tab.open win
+#navbarButton = Titanium.UI.createButtonBar {
+#	labels:["設定"],
+#	backgroundColor:'#336699'
+#}
+#
+#win.setRightNavButton(navbarButton)
+#
+#navbarButton.addEventListener 'click', (e) =>
+#  dialog.show()
+#
+#
+#dialog = Titanium.UI.createOptionDialog {
+#  options:['ログイン設定'],
+#  destructive:1,
+#  cancel:2,
+#  title:'ユーザ設定'
+#} 
+#
+#dialog.addEventListener 'click', (e) =>
+#  win = Ti.UI.createWindow {
+#    titleid : "設定",
+#    url : '../main_windows/others.js'
+#  }
+#  tab.open win
 
 adjustedButton = Ti.UI.createButton {
   title: '調整有り',

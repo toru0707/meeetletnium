@@ -1,12 +1,1 @@
-var TabGroup;
-
-TabGroup = (function() {
-
-  function TabGroup() {
-    this.tabGroup = Titanium.UI.createTabGroup();
-    return this.tabGroup;
-  }
-
-  return TabGroup;
-
-})();
+/Users/toru0707/git/meeetletnium/Resources/tabgroup.js

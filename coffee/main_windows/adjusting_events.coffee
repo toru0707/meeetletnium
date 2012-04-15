@@ -1,3 +1,6 @@
+Ti.include(Ti.Filesystem.resourcesDirectory + "/helpers/constants.js")
+Ti.include(Ti.Filesystem.resourcesDirectory + "/helpers/api.js")
+
 win = Titanium.UI.currentWindow
 tab = Ti.UI.currentTab
 
@@ -12,6 +15,9 @@ search.addEventListener 'return', (e) =>
 search.addEventListener 'cancel', (e) =>
 	search.blur 
 
+win.open () ->
+win.addEventListener 'open', (e) ->
+  Ti.API.log "win is opend!."
 
 data = []
 
